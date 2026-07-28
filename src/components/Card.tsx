@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface CardProps {
     img: string       // The location of the image
     text: string      // The text the card will contain
