@@ -1,7 +1,9 @@
+import Textbox from "./Textbox"
+
 function About() {
   return (
     <>
-      <div>About</div>
+      <Textbox>About</Textbox>
     </>
   )
 }
