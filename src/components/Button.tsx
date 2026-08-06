@@ -4,7 +4,7 @@ interface ButtonProps {
 
 function Button({ children }: ButtonProps) {
   return (
-    <button className="mix-blend-normal bg-orange-800 rounded-lg p-2 m-2">{ children }</button>
+    <button className="bg-white rounded-lg p-2 m-2 transition-all hover:scale-105 hover:shadow-white hover:shadow-xl">{ children }</button>
   )
 }
 
