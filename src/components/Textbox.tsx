@@ -1,11 +1,11 @@
 interface TextboxProps {
-    children: string
+    children: React.ReactNode
 }
 
 function Textbox({ children }: TextboxProps) {
     return (
         <div className="rounded-md bg-gray-500">
-            <p className="text-black mx-5 text-sm md:text-base lg:text-lg my-5">{ children }</p>
+            <p className="text-black mx-10 text-sm md:text-base lg:text-lg my-5">{ children }</p>
         </div>
     )
 }

@@ -1,9 +1,12 @@
 import Textbox from "./Textbox"
+import Button from "./Button"
 
 function About() {
   return (
     <>
-      <Textbox>About</Textbox>
+      <Textbox>This section contains a bit about me and my hobbies outside of computer science so you can get to know me! I'm an avid amateur astronomer. I even published an astronomy paper while I was in university.
+        <Button>Click this button to see my paper!</Button>
+      </Textbox>
     </>
   )
 }

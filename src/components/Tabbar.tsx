@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-import { FiGithub } from "react-icons/fi";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
 
@@ -16,7 +15,7 @@ function Tabbar() {
           <li>
             <NavLink to="/About" className={({ isActive }) =>
               `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-white' : 'text-heading focus:text-white'}`
-            }>About</NavLink>
+            }>About Me</NavLink>
           </li>
           <li>
             <NavLink to="/Projects" className={({ isActive }) =>
@@ -30,7 +29,7 @@ function Tabbar() {
             href="https://github.com/danemacfadden"
             target="_blank"
             rel="noreferrer"
-            className="transition-all duration-300 hover:scale-150 text-heading scale-150 hover:text-white"
+            className="transition-all hover:scale-150 text-heading hover:text-white"
             aria-label="GitHub"
           >
             <TbBrandGithub />
@@ -40,7 +39,7 @@ function Tabbar() {
             href="https://www.linkedin.com/in/danemacfadden"
             target="_blank"
             rel="noreferrer"
-            className="transition-all duration-300 hover:scale-150 text-heading scale-150 hover:text-white"
+            className="transition-all hover:scale-150 text-heading hover:text-white"
             aria-label="LinkedIn"
           >
             <TbBrandLinkedin />
