@@ -1,11 +1,17 @@
 interface ButtonProps {
-    children: React.ReactNode
+  link?: string
+  children: React.ReactNode
 }
 
-function Button({ children }: ButtonProps) {
-  return (
-    <button className="bg-white rounded-lg p-2 m-2 transition-all hover:scale-105 hover:shadow-white hover:shadow-xl">{ children }</button>
+function Button({ link, children }: ButtonProps) {
+  const buttonContent = (
+      <button className="bg-slate-400 rounded-lg p-2 m-2 transition-all hover:scale-105 hover:shadow-slate-900 hover:shadow-xl">{children}</button>
   )
+
+  if (link) {
+    return <a href={link}>{buttonContent}</a>
+  }
+  return buttonContent
 }
 
 export default Button
