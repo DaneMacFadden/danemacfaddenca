@@ -29,7 +29,7 @@ function Tabbar() {
             href="https://github.com/danemacfadden"
             target="_blank"
             rel="noreferrer"
-            className="transition-all hover:scale-150 text-heading hover:text-white"
+            className="transition-all hover:scale-150 text-heading active:text-white"
             aria-label="GitHub"
           >
             <TbBrandGithub />
@@ -39,7 +39,7 @@ function Tabbar() {
             href="https://www.linkedin.com/in/danemacfadden"
             target="_blank"
             rel="noreferrer"
-            className="transition-all hover:scale-150 text-heading hover:text-white"
+            className="transition-all hover:scale-150 text-heading active:text-white"
             aria-label="LinkedIn"
           >
             <TbBrandLinkedin />
