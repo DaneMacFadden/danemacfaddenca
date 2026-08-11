@@ -38,7 +38,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #3f3f3f;
+    --bg: #404e3b;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -52,6 +52,10 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
+}
+
+@theme {
+  --color-limie: #BAC8B1
 }
 
 #root {
