@@ -113,5 +113,8 @@ code {
 }
 
 @theme {
-  --color-limie: #BAC8B1;
+  --color-limie: #bac8b1;
+  --color-limietxt-active: #e6e6e6;
+  --color-limietxt: #7b9669;
+  --color-darklimie: #6c8480;
 }

@@ -5,21 +5,21 @@ import { TbBrandGithub } from "react-icons/tb";
 function Tabbar() {
   return (
     <>
-      <nav className="w-full my-5 rounded bg-limie p-5 px-10 flex items-center text-black">
+      <nav className="w-full my-5 rounded-md bg-limie p-5 px-10 flex items-center text-limietxt">
         <ul className="flex items-center gap-8 font-medium">
           <li>
             <NavLink to="/" className={({ isActive }) =>
-              `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-white' : 'text-heading focus:text-white'}`
+              `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-limietxt-active' : 'text-heading focus:text-limietxt'}`
             }>Home</NavLink>
           </li>
-          <li>
+          <li> 
             <NavLink to="/About" className={({ isActive }) =>
-              `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-white' : 'text-heading focus:text-white'}`
+              `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-limietxt-active' : 'text-heading focus:text-limietxt'}`
             }>About Me</NavLink>
           </li>
           <li>
             <NavLink to="/Projects" className={({ isActive }) =>
-              `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-white' : 'text-heading focus:text-white'}`
+              `inline-block transform transition-all duration-300 hover:scale-150 cursor-pointer ${isActive ? 'text-limietxt-active' : 'text-heading focus:text-limietxt'}`
             }>Projects</NavLink>
           </li>
         </ul>
