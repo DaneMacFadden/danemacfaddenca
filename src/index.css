@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --text: #6b6375;
@@ -38,7 +36,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #000000;
+    --bg: #6c8480;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -112,4 +110,11 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+@theme {
+  --color-limie: #bac8b1;
+  --color-limietxt-active: #e6e6e6;
+  --color-limietxt: #7b9669;
+  --color-darklimie: #6c8480;
 }
