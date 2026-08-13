@@ -5,7 +5,7 @@ import { TbBrandGithub } from "react-icons/tb";
 function Tabbar() {
   return (
     <>
-      <nav className="w-full my-5 rounded-md bg-limie p-5 px-10 flex items-center text-limietxt">
+      <nav className="my-5 mx-10 rounded-md bg-limie p-5 px-10 flex items-center text-limietxt">
         <ul className="flex items-center gap-8 font-medium">
           <li>
             <NavLink to="/" className={({ isActive }) =>

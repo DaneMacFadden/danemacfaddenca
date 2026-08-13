@@ -4,7 +4,7 @@ interface TextboxProps {
 
 function Textbox({ children }: TextboxProps) {
     return (
-        <div className="rounded-md bg-limie p-10">
+        <div className="rounded-md bg-limie p-10 mx-10">
             <p className="text-limietxt mx-10 text-sm md:text-base lg:text-lg my-5">{ children }</p>
         </div>
     )
