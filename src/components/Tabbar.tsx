@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom"
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
+import { motion } from "motion/react"
 
 function Tabbar() {
   return (
     <>
-      <nav className="my-5 mx-10 rounded-md bg-limie p-5 px-10 flex items-center text-limietxt">
+      <motion.nav className="my-5 mx-10 rounded-md bg-limie p-5 px-10 flex items-center text-limietxt" initial={{ y: -15, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 1}}>
         <ul className="flex items-center gap-8 font-medium">
           <li>
             <NavLink to="/" className={({ isActive }) =>
@@ -45,7 +46,7 @@ function Tabbar() {
             <TbBrandLinkedin />
           </a>
         </div>
-      </nav>
+      </motion.nav>
     </>
   )
 }
