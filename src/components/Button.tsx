@@ -7,12 +7,12 @@ interface ButtonProps {
 // 
 function Button({ link, children }: ButtonProps) {
   const buttonContent = (
-      <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9, y: 1 }}  className="bg-darklimie text-limietxt-active rounded-lg py-2 px-5 m-2">{children}</motion.button>
+      <motion.button whileHover={{ scale: 1.2, y: -5 }} whileTap={{ scale: 0.9, y: 1 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="bg-darklimie text-limietxt-active rounded-lg py-2 px-5 m-2">{children}</motion.button>
   )
 
   if (link) {
-    // For testing purposes
     // return <a href={link} target="_blank" rel="noopener noreferrer">{buttonContent}</a>
+    // For testing purposes
     return <a href="#">{buttonContent}</a>
   }
   return buttonContent
