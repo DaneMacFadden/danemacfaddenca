@@ -11,9 +11,9 @@ function Button({ link, children }: ButtonProps) {
   )
 
   if (link) {
-    // return <a href={link} target="_blank" rel="noopener noreferrer">{buttonContent}</a>
+    return <a href={link} target="_blank" rel="noopener noreferrer">{buttonContent}</a>
     // For testing purposes
-    return <a href="#">{buttonContent}</a>
+    // return <a href="#">{buttonContent}</a>
   }
   return buttonContent
 }
